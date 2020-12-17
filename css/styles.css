@@ -201,3 +201,25 @@ button :focus {
   margin: 0 auto;
   padding: 0 15px;
 }
+header > .container {
+  display: flex;
+  align-items: center;
+}
+.container > .logo {
+  margin-right: 93px;
+}
+.site-nav {
+  display: flex;
+}
+.site-nav > .item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-link,
+.mail,
+.phone {
+  padding: 32px 0;
+}
+.mail {
+  margin-left: auto;
+  margin-right: 50px;
+}
