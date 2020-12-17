@@ -9,6 +9,18 @@
 
 /* Стили для index.html */
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Body */
 .body {
   color: var(--primary-text-color);
