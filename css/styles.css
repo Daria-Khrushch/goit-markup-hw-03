@@ -251,15 +251,15 @@ header > .container {
   text-align: center;
   width: 696px;
   height: 120px;
-  padding: 358px 520px 30px 384px;
+  padding: 358px 167px 30px 300px;
 }
 .container > button {
   display: inline-block;
-  margin: 0 768px 192px 632px;
+  margin: 0 415px 192px 552px;
 }
 .container > .advantages {
   display: flex;
-  padding: 47px 0 90px;
+  padding: 47px 0 94px;
   align-items: center;
 }
 .advantages > .item:not(:last-child) {
@@ -267,4 +267,14 @@ header > .container {
 }
 .advantages > .item {
   width: 270px;
+}
+.section-title {
+  margin-bottom: 50px;
+}
+.features {
+  display: flex;
+  margin-bottom: 94px;
+}
+.features > .item:not(:last-child) {
+  margin-right: 30px;
 }
