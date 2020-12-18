@@ -201,6 +201,7 @@ button {
   border: var(--main-background-color);
   border-radius: 4px;
   padding: 6px 22px;
+  cursor: pointer;
 }
 button:hover,
 button :focus {
@@ -262,7 +263,6 @@ header > .container {
 }
 .container > .hero-title {
   width: 696px;
-  height: 120px;
   margin-bottom: 30px;
 }
 .container > .advantages {
