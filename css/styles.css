@@ -52,6 +52,9 @@ p {
 }
 
 /* Site-nav */
+header {
+  margin-bottom: 47px;
+}
 .site-nav a {
   color: var(--title-text-color);
   font-weight: 500;
@@ -81,7 +84,6 @@ p {
 /* Hero */
 .hero h1 {
   color: var(--white-color);
-  background-color: var(--header-background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -215,6 +217,7 @@ button :focus {
 header > .container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .container > .logo {
   margin-right: 93px;
@@ -233,4 +236,19 @@ header > .container {
 .mail {
   margin-left: auto;
   margin-right: 50px;
+}
+
+.hero > .container {
+  background-color: var(--header-background-color);
+}
+.container > .hero-title {
+  display: inline-block;
+  text-align: center;
+  width: 696px;
+  height: 120px;
+  padding: 358px 520px 30px 384px;
+}
+.container > button {
+  display: inline-block;
+  margin: 0 768px 192px 632px;
 }
