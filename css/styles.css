@@ -131,7 +131,12 @@ header {
   text-transform: uppercase;
 }
 .title-advantages {
-  display: none;
+  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /* Team */
@@ -251,4 +256,15 @@ header > .container {
 .container > button {
   display: inline-block;
   margin: 0 768px 192px 632px;
+}
+.container > .advantages {
+  display: flex;
+  padding: 47px 0 90px;
+  align-items: center;
+}
+.advantages > .item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages > .item {
+  width: 270px;
 }
