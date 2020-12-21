@@ -44,55 +44,27 @@ p {
 .list {
   list-style: none;
 }
-/* Logo */
-.logo {
-  color: var(--title-text-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
-}
-.logostart {
-  color: var(--accent-color);
-}
-
-/* Site-nav */
-.site-nav a {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-.site-nav a:hover,
-.site-nav a:focus,
-.mail:hover,
-.mail:focus,
-.phone:hover,
-.phone:focus {
-  color: var(--accent-color);
-}
-.mail,
-.phone {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
 /* Hero */
 .hero h1 {
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--header-background-color);
+  width: 1600px;
+  text-align: center;
+}
+.hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 .button {
   color: var(--white-color);
@@ -110,12 +82,15 @@ p {
   height: 50px;
   border-radius: 4px;
   border: var(--accent-color);
+  margin-left: auto;
+  margin-right: auto;
 }
 .button:focus,
 .button:hover {
   color: var(--accent-color);
   background-color: var(--white-color);
 }
+
 /* Section */
 .section-title {
   color: var(--title-text-color);
@@ -141,6 +116,36 @@ p {
   height: 1px;
   margin: -1px;
 }
+.section-advantages {
+  padding: 94px 215px;
+  width: 1600px;
+}
+.container > .advantages {
+  display: flex;
+}
+.advantages > .item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages > .item {
+  width: 270px;
+}
+
+/* Features */
+.section-title {
+  margin-bottom: 50px;
+}
+.features {
+  display: flex;
+  margin-bottom: 94px;
+  width: 1600px;
+}
+.features > .item:not(:last-child) {
+  margin-right: 30px;
+}
+.section-features {
+  width: 1600px;
+  padding: 94px 215px;
+}
 
 /* Team */
 .team .title {
@@ -157,29 +162,16 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
-/* Footer */
-.footer {
-  background-color: var(--header-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+.section-team {
+  padding: 94px 215px;
+  background: var(--main-background-color);
   width: 1600px;
 }
-address {
-  font-style: normal;
-  color: var(--white-color);
+.container > .team {
+  display: flex;
 }
-.contacts {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
-.logoending {
-  color: var(--white-color);
-}
-.contacts:hover,
-.contacts:focus,
-.current a {
-  color: var(--accent-color);
+.team > .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Стили для portfolio.html */
@@ -224,101 +216,6 @@ button :focus {
   font-size: 16px;
   line-height: 2;
 }
-
-/* Common */
-header {
-  border-bottom: 1px solid #ececec;
-  width: 1600px;
-  padding-left: 215px;
-  padding-right: 215px;
-}
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-header > .container {
-  display: flex;
-  align-items: center;
-}
-.container > .logo {
-  margin-right: 93px;
-}
-.site-nav {
-  display: flex;
-}
-.site-nav > .item:not(:last-child) {
-  margin-right: 50px;
-}
-.header-link,
-.mail,
-.phone {
-  padding: 32px 0;
-}
-.mail {
-  margin-left: auto;
-  margin-right: 50px;
-}
-.hero {
-  padding: 200px 452px;
-  background-color: var(--header-background-color);
-  width: 1600px;
-}
-.hero > .container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.container > .hero-title {
-  width: 696px;
-  margin-bottom: 30px;
-}
-.section-advantages {
-  padding: 94px 215px;
-  width: 1600px;
-}
-.container > .advantages {
-  display: flex;
-  align-items: center;
-}
-.advantages > .item:not(:last-child) {
-  margin-right: 30px;
-}
-.advantages > .item {
-  width: 270px;
-}
-.section-title {
-  margin-bottom: 50px;
-}
-.features {
-  display: flex;
-  margin-bottom: 94px;
-  width: 1600px;
-}
-.features > .item:not(:last-child) {
-  margin-right: 30px;
-}
-.section-features {
-  width: 1600px;
-  padding: 94px 215px;
-}
-.section-team {
-  padding: 94px 215px;
-  background: var(--main-background-color);
-  width: 1600px;
-}
-.container > .team {
-  display: flex;
-}
-.team > .item:not(:last-child) {
-  margin-right: 30px;
-}
-.footer-logo {
-  margin-bottom: 20px;
-}
-.footer > .item:not(:last-child) {
-  margin-bottom: 9px;
-}
 .buttons {
   display: flex;
   margin-bottom: 50px;
@@ -353,4 +250,108 @@ header > .container {
 .portfolio {
   width: 1600px;
   padding: 92px 215px 94px;
+}
+
+/* Common */
+/* Logo */
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logostart {
+  color: var(--accent-color);
+}
+
+/* Site-nav */
+.site-nav a {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus,
+.mail:hover,
+.mail:focus,
+.phone:hover,
+.phone:focus {
+  color: var(--accent-color);
+}
+.mail,
+.phone {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+header {
+  border-bottom: 1px solid #ececec;
+  width: 1600px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+header > .container {
+  display: flex;
+  align-items: center;
+}
+.container > .logo {
+  margin-right: 93px;
+}
+.site-nav {
+  display: flex;
+}
+.site-nav > .item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-link,
+.mail,
+.phone {
+  padding: 32px 0;
+}
+.mail {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--header-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1600px;
+}
+address {
+  font-style: normal;
+  color: var(--white-color);
+}
+.contacts {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.logoending {
+  color: var(--white-color);
+}
+.contacts:hover,
+.contacts:focus,
+.current a {
+  color: var(--accent-color);
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
+.footer > .item:not(:last-child) {
+  margin-bottom: 9px;
 }
