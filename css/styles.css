@@ -57,7 +57,6 @@ p {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--header-background-color);
-  width: 1600px;
   text-align: center;
 }
 .hero-title {
@@ -117,8 +116,8 @@ p {
   margin: -1px;
 }
 .section-advantages {
-  padding: 94px 215px;
-  width: 1600px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .container > .advantages {
   display: flex;
@@ -136,15 +135,12 @@ p {
 }
 .features {
   display: flex;
-  margin-bottom: 94px;
-  width: 1600px;
 }
 .features > .item:not(:last-child) {
   margin-right: 30px;
 }
 .section-features {
-  width: 1600px;
-  padding: 94px 215px;
+  padding-bottom: 94px;
 }
 
 /* Team */
@@ -163,9 +159,9 @@ p {
   letter-spacing: 0.03em;
 }
 .section-team {
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: var(--main-background-color);
-  width: 1600px;
 }
 .container > .team {
   display: flex;
@@ -173,7 +169,21 @@ p {
 .team > .item:not(:last-child) {
   margin-right: 30px;
 }
-
+.team-member {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--white-color);
+  margin-top: -7px;
+}
+.team-member > .title {
+  margin-bottom: 10px;
+}
+.team > .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 /* Стили для portfolio.html */
 
 .title-portfolio {
@@ -248,8 +258,8 @@ button :focus {
   padding: 20px 24px;
 }
 .portfolio {
-  width: 1600px;
-  padding: 92px 215px 94px;
+  padding-top: 92px;
+  padding-bottom: 94px;
 }
 
 /* Common */
@@ -294,7 +304,6 @@ button :focus {
 }
 header {
   border-bottom: 1px solid #ececec;
-  width: 1600px;
   padding-left: 215px;
   padding-right: 215px;
 }
@@ -331,7 +340,6 @@ header > .container {
   background-color: var(--header-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
 }
 address {
   font-style: normal;
@@ -352,6 +360,6 @@ address {
 .footer-logo {
   margin-bottom: 20px;
 }
-.footer > .item:not(:last-child) {
+.footer .item:not(:last-child) {
   margin-bottom: 9px;
 }
