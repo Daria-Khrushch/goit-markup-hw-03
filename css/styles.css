@@ -304,8 +304,6 @@ button :focus {
 }
 header {
   border-bottom: 1px solid #ececec;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 .container {
   width: 1200px;
